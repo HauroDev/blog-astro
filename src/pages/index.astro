@@ -1,35 +1,9 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css';
+import BaseLayout from '../components/layouts/BaseLayout.astro';
 
 const pageTitle = 'Mi primer proyecto con Astro';
 ---
 
-<html lang='es'>
-  <head>
-    <meta charset='utf-8' />
-    <link
-      rel='icon'
-      type='image/svg+xml'
-      href='/favicon.svg'
-    />
-    <meta
-      name='viewport'
-      content='width=device-width'
-    />
-    <meta
-      name='generator'
-      content={Astro.generator}
-    />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header pageTitle={pageTitle} />
-    <main></main>
-    <Footer />
-    <script>
-      import '../scripts/menu.js';
-    </script>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Mi impresionante subtitulo del blog</h2>
+</BaseLayout>
