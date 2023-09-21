@@ -1,8 +1,10 @@
 ---
-const title = 'Mi primer proyecto con Astro';
+import '../styles/global.css';
+
+const pageTitle = 'Mi primer proyecto con Astro';
 ---
 
-<html lang='en'>
+<html lang='es'>
   <head>
     <meta charset='utf-8' />
     <link
@@ -18,7 +20,7 @@ const title = 'Mi primer proyecto con Astro';
       name='generator'
       content={Astro.generator}
     />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <header>
@@ -27,7 +29,7 @@ const title = 'Mi primer proyecto con Astro';
         <li><a href='/about/'>Sobre Mi</a></li>
         <li><a href='/blog/'>Blog</a></li>
       </ul>
-      <h1>{title}</h1>
+      <h1>{pageTitle}</h1>
     </header>
   </body>
 </html>

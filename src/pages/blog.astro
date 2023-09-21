@@ -1,8 +1,10 @@
 ---
-const title = 'Mi blog con astro de aprendizaje';
+import '../styles/global.css';
+
+const pageTitle = 'Mi blog con astro de aprendizaje';
 ---
 
-<html lang='en'>
+<html lang='es'>
   <head>
     <meta charset='utf-8' />
     <link
@@ -18,7 +20,7 @@ const title = 'Mi blog con astro de aprendizaje';
       name='generator'
       content={Astro.generator}
     />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <header>
@@ -27,8 +29,13 @@ const title = 'Mi blog con astro de aprendizaje';
         <li><a href='/about/'>Sobre Mi</a></li>
         <li><a href='/blog/'>Blog</a></li>
       </ul>
-      <h1>{title}</h1>
+      <h1>{pageTitle}</h1>
     </header>
     <p>Aqui es donde publicare sobre mi viaje de aprendizaje Astro.</p>
+    <ul>
+      <li><a href='/posts/post-1/'>Publicación 1</a></li>
+      <li><a href='/posts/post-2/'>Publicación 2</a></li>
+      <li><a href='/posts/post-3/'>Publicación 3</a></li>
+    </ul>
   </body>
 </html>
