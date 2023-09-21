@@ -30,7 +30,7 @@ const skills = [
 ];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 ---
 
@@ -76,3 +76,10 @@ const goal = 3;
     )
   }
 </BaseLayout>
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-left: 1rem;
+  }
+</style>
