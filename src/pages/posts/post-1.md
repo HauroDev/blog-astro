@@ -9,6 +9,8 @@ image:
 tags: ['astro', 'bloguear', 'aprender en público']
 ---
 
+<meta charset="UTF-8">
+
 # Mi primera publicación en el blog
 
 Published on: 2022-07-01

@@ -1,0 +1,43 @@
+---
+
+---
+
+<nav class='nav-links'>
+  <ul>
+    <li><a href='/'>Inicio</a></li>
+    <li><a href='/about/'>Sobre Mi</a></li>
+    <li><a href='/blog/'>Blog</a></li>
+  </ul>
+</nav>
+
+<style>
+  ul {
+    display: grid;
+    gap: 1rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: block;
+    border-left-width: 0.25rem;
+    border-left-style: solid;
+    border-left-color: black;
+  }
+
+  li:hover {
+    border-left-width: 0.5rem;
+    transition-duration: 200ms;
+  }
+
+  @media screen and (min-width: 636px) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    li {
+      display: inline-block;
+      border: none;
+    }
+  }
+</style>

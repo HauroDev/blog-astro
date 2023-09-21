@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = 'Sobre Mi';
 
@@ -69,14 +71,7 @@ const textCase = 'uppercase';
     </style>
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href='/'>Inicio</a></li>
-        <li><a href='/about/'>Sobre Mi</a></li>
-        <li><a href='/blog/'>Blog</a></li>
-      </ul>
-      <h1>{pageTitle}</h1>
-    </header>
+    <Header pageTitle={pageTitle} />
     <h2>... ¡y mi primer Blog usando Astro!</h2>
     <p>
       Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda
@@ -90,7 +85,9 @@ const textCase = 'uppercase';
     <p>Aquí te dejo algunos datos sobre mi:</p>
     <ul>
       <li>Me llamo {identity.firstname}</li>
-      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+      <li>
+        Vivo en {identity.country} y trabajo como {identity.occupation}.
+      </li>
       {
         identity.hobbies.length >= 2 && (
           <li>
@@ -115,5 +112,10 @@ const textCase = 'uppercase';
         <p>Mi meta no son 3 días</p>
       )
     }
+
+    <Footer />
+    <script>
+      import '../scripts/menu.js';
+    </script>
   </body>
 </html>
