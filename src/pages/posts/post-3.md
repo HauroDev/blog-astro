@@ -1,5 +1,5 @@
 ---
-layout: '../../components/layouts/MarkDownPostLayout.astro'
+layout: '../../layouts/MarkDownPostLayout.astro'
 title: Mi tercera publicación en el blog
 author: HauroDev
 description: 'Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho.'
